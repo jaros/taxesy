@@ -1,0 +1,8 @@
+{
+  "name": "taxesy",
+  "app_id": "f477785c",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
