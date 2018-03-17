@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {IonicPage, NavController, NavParams} from 'ionic-angular';
+import {IonicPage, NavController} from 'ionic-angular';
 
 /**
  * Generated class for the SuggestionsPage page.
@@ -15,7 +15,7 @@ import {IonicPage, NavController, NavParams} from 'ionic-angular';
 })
 export class SuggestionsPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController) {
   }
 
   items = [
@@ -26,7 +26,7 @@ export class SuggestionsPage {
   ];
 
   itemSelected(item: string) {
-    if ( item == this.items[3] ){
+    if (item == this.items[3]) {
       console.log("Selected Item ", item);
       this.navCtrl.push('investments-page');
     } else {
@@ -35,8 +35,7 @@ export class SuggestionsPage {
 
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad SuggestionsPage');
+  imDone() {
+    this.navCtrl.push('CompletedPage');
   }
-
 }

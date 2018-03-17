@@ -1,4 +1,4 @@
-import {NavParams, Platform, ViewController} from "ionic-angular";
+import {AlertController, NavController, NavParams, Platform, ViewController} from "ionic-angular";
 import {Component} from "@angular/core";
 
 @Component({
@@ -63,7 +63,9 @@ export class ModalContentPage {
 
   constructor(public platform: Platform,
               public params: NavParams,
-              public viewCtrl: ViewController) {
+              public viewCtrl: ViewController,
+              public navCtrl: NavController,
+              public alertCtrl: AlertController) {
 
     //const newline = "<br\>";
 
@@ -89,4 +91,19 @@ export class ModalContentPage {
   dismiss() {
     this.viewCtrl.dismiss();
   }
+
+  gotoConfirm() {
+    let alert = this.alertCtrl.create({
+      title: 'Success',
+      subTitle: 'You will receive the confirmation within the next few days.',
+      buttons: [{
+        text: 'Ok', handler: () => {
+          console.log('clicked Ok');
+          this.navCtrl.push('SuggestionsPage');
+        }
+      }]
+    });
+    alert.present();
+  }
+
 }
