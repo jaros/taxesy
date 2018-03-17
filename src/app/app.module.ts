@@ -12,6 +12,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import {SuggestionsPage} from "../pages/suggestions/suggestions";
 import { Camera } from '@ionic-native/camera';
+import {ModalContentPage} from "../pages/investments/modalcontent";
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { Camera } from '@ionic-native/camera';
     HomePage,
     TabsPage,
     SuggestionsPage,
+    ModalContentPage
   ],
   imports: [
     BrowserModule,
@@ -33,7 +35,8 @@ import { Camera } from '@ionic-native/camera';
     ContactPage,
     HomePage,
     SuggestionsPage,
-    TabsPage
+    TabsPage,
+    ModalContentPage
   ],
   providers: [
     StatusBar,
