@@ -9,7 +9,6 @@ import { TabsPage } from '../pages/tabs/tabs';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-import {SuggestionsPage} from "../pages/suggestions/suggestions";
 import { Camera } from '@ionic-native/camera';
 import {ModalContentPage} from "../pages/investments/modalcontent";
 
@@ -21,7 +20,6 @@ import { HttpClientModule } from '@angular/common/http';
     AboutPage,
     HomePage,
     TabsPage,
-    SuggestionsPage,
     ModalContentPage
   ],
   imports: [
@@ -34,7 +32,6 @@ import { HttpClientModule } from '@angular/common/http';
     MyApp,
     AboutPage,
     HomePage,
-    SuggestionsPage,
     TabsPage,
     ModalContentPage
   ],
