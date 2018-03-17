@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="io.ionic.starter" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="ch.taxesy.one" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>taxesy</name>
     <description>An awesome Ionic/Cordova app.</description>
     <author email="hi@ionicframework" href="http://ionicframework.com/">Ionic Framework Team</author>
@@ -75,11 +75,21 @@
         <splash height="960" src="resources/ios/splash/Default@2x~iphone.png" width="640" />
         <splash height="480" src="resources/ios/splash/Default~iphone.png" width="320" />
         <splash height="2732" src="resources/ios/splash/Default@2x~universal~anyany.png" width="2732" />
+        <config-file parent="NSCameraUsageDescription" platform="ios" target="*-Info.plist">
+            <string>This app needs the camera for Augmented Reality</string>
+        </config-file>
+        <config-file parent="NSLocationWhenInUseUsageDescription" platform="ios" target="*-Info.plist">
+            <string>This app needs your location for Geo AR</string>
+        </config-file>
+        <config-file parent="NSPhotoLibraryUsageDescription" platform="ios" target="*-Info.plist">
+            <string>This app needs to access your photo gallery such that you can share your screenshots</string>
+        </config-file>
     </platform>
     <plugin name="cordova-plugin-whitelist" spec="^1.3.3" />
     <plugin name="cordova-plugin-device" spec="^2.0.1" />
     <plugin name="cordova-plugin-splashscreen" spec="^5.0.2" />
     <plugin name="cordova-plugin-ionic-webview" spec="^1.1.16" />
     <plugin name="cordova-plugin-ionic-keyboard" spec="^2.0.5" />
+    <plugin name="cordova-plugin-camera" spec="^4.0.2" />
     <engine name="ios" spec="4.5.4" />
 </widget>

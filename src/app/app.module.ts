@@ -11,6 +11,7 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import {SuggestionsPage} from "../pages/suggestions/suggestions";
+import { Camera } from '@ionic-native/camera';
 
 @NgModule({
   declarations: [
@@ -37,6 +38,7 @@ import {SuggestionsPage} from "../pages/suggestions/suggestions";
   providers: [
     StatusBar,
     SplashScreen,
+    Camera,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
