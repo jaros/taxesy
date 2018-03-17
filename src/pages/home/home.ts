@@ -36,4 +36,8 @@ export class HomePage {
     });
   }
 
+  gotoReviewPersonalData() {
+    this.navCtrl.push('tinder-page');
+  }
+
 }
