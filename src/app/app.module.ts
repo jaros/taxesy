@@ -12,6 +12,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import {SuggestionsPage} from "../pages/suggestions/suggestions";
 import { Camera } from '@ionic-native/camera';
+import {ModalContentPage} from "../pages/investments/modalcontent";
 
 import { HttpClientModule } from '@angular/common/http';
 
@@ -23,6 +24,7 @@ import { HttpClientModule } from '@angular/common/http';
     HomePage,
     TabsPage,
     SuggestionsPage,
+    ModalContentPage
   ],
   imports: [
     BrowserModule,
@@ -36,7 +38,8 @@ import { HttpClientModule } from '@angular/common/http';
     ContactPage,
     HomePage,
     SuggestionsPage,
-    TabsPage
+    TabsPage,
+    ModalContentPage
   ],
   providers: [
     StatusBar,

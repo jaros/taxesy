@@ -1,6 +1,5 @@
-import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import {InvestmentsPage} from "../investments/investments";
+import {Component} from '@angular/core';
+import {IonicPage, NavController, NavParams} from 'ionic-angular';
 
 /**
  * Generated class for the SuggestionsPage page.
@@ -20,15 +19,14 @@ export class SuggestionsPage {
   }
 
   items = [
-    '3rd Pillar',
     'Health insurance',
-    'Life Insurance',
+    'Life insurance',
     'Donations',
-    'Investments',
+    'Financial products',
   ];
 
   itemSelected(item: string) {
-    if ( item == this.items[4] ){
+    if ( item == this.items[3] ){
       console.log("Selected Item ", item);
       this.navCtrl.push('InvestmentsPage');
     } else {

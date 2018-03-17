@@ -4,15 +4,26 @@
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
 -->
-<ion-header>
 
+<ion-header>
   <ion-navbar>
     <ion-title>TAXESy</ion-title>
   </ion-navbar>
-
 </ion-header>
 
-
-<ion-content padding>
-
+<ion-content>
+  <ion-list>
+    <ion-list-header>
+      Investment opportunities:
+    </ion-list-header>
+    <a ion-item (click)="openModal({charNum: 0})">
+      Credit Suisse Pension Fund
+    </a>
+    <a ion-item (click)="openModal({charNum: 0})">
+      UBS Pension Strate
+    </a>
+    <a ion-item (click)="openModal({charNum: 0})">
+      RAIFFEISEN
+    </a>
+  </ion-list>
 </ion-content>
