@@ -14,6 +14,8 @@ import {SuggestionsPage} from "../pages/suggestions/suggestions";
 import { Camera } from '@ionic-native/camera';
 import {ModalContentPage} from "../pages/investments/modalcontent";
 
+import { HttpClientModule } from '@angular/common/http';
+
 @NgModule({
   declarations: [
     MyApp,
@@ -26,6 +28,7 @@ import {ModalContentPage} from "../pages/investments/modalcontent";
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
