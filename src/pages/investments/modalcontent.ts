@@ -47,7 +47,7 @@ export class ModalContentPage {
       {
         name: 'RAIFFEISEN',
         quote: 'Pension Invest Futura',
-        image: 'assets/img/avatar-samwise.jpg',
+        image: 'assets/imgs/why-taxes.jpeg',
         items: [
           { title: 'Risk', note: 'low' },
           { title: 'Composition', note: 'list required' },
