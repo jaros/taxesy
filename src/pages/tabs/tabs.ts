@@ -2,7 +2,7 @@ import {Component} from '@angular/core';
 
 import {AboutPage} from '../about/about';
 import {HomePage} from '../home/home';
-import {SuggestionsPage} from "../suggestions/suggestions";
+import {NavController} from "ionic-angular";
 
 @Component({
   templateUrl: 'tabs.html'
@@ -11,8 +11,17 @@ export class TabsPage {
 
   tab1Root = HomePage;
   tab2Root = AboutPage;
-  tab3Root = SuggestionsPage;
 
-  constructor() {
+  constructor(public navCtrl: NavController) {
+  }
+
+  gotoSuggestion() {
+    console.log("to suggestions");
+    this.navCtrl.push('SuggestionsPage');
+  }
+
+  gotoInvestment() {
+    console.log("to investments");
+    this.navCtrl.push('investments-page');
   }
 }

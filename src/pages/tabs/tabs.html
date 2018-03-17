@@ -1,5 +1,6 @@
 <ion-tabs>
   <ion-tab [root]="tab1Root" tabTitle="Home" tabIcon="home"></ion-tab>
-  <ion-tab [root]="tab2Root" tabTitle="About" tabIcon="information-circle"></ion-tab>
-  <ion-tab [root]="tab3Root" tabTitle="Suggestion" tabIcon="ribbon"></ion-tab>
+  <ion-tab [root]="tab2Root" tabTitle="Deduction" tabIcon="information-circle"></ion-tab>
+  <ion-tab (ionSelect)="gotoSuggestion()" tabTitle="Suggestion" tabIcon="trending-up"></ion-tab>
+  <ion-tab (ionSelect)="gotoInvestment()" tabTitle="Investment" tabIcon="logo-usd"></ion-tab>
 </ion-tabs>
