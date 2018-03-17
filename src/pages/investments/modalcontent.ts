@@ -41,7 +41,7 @@ import {Component} from "@angular/core";
           <ion-note item-end align="right" style="color:#090909" >200 CHF/month</ion-note>
         </ion-item>
         <ion-item align="left">Potential Gain
-          <ion-note item-end align="right" style="color:#090909" >5 years -> 1105 CHF<br/> 10 years -> 2847 CHF</ion-note>
+          <ion-note item-end align="right" style="color:#090909" >5y -> 1105 CHF<br/> 10y -> 2847 CHF</ion-note>
         </ion-item>
       </ion-list>
       <ion-item>
