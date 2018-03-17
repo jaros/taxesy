@@ -38,15 +38,15 @@ import {Component} from "@angular/core";
           <ion-note item-end align="right" style="color:#090909" >ecological<br/>social<br/>ethical</ion-note>
         </ion-item>
         <ion-item class="textitme">Proposition
-          <ion-note item-end align="right" style="color:#090909" >100 CHF/month</ion-note>
+          <ion-note item-end align="right" style="color:#090909" >200 CHF/month</ion-note>
         </ion-item>
         <ion-item align="left">Potential Gain
-          <ion-note item-end align="right" style="color:#090909" >5 years -> X<br/> 10 years -> Y</ion-note>
+          <ion-note item-end align="right" style="color:#090909" >5 years -> 1105 CHF<br/> 10 years -> 2847 CHF</ion-note>
         </ion-item>
       </ion-list>
       <ion-item>
         <ion-icon name="alert" item-start></ion-icon>
-        Considered as 3rd pillar <br/>Tax deduction of X CHF
+        Considered as 3rd pillar <br/>Tax deduction of 356 CHF
       </ion-item>
     </ion-content>
     <ion-footer align="center">

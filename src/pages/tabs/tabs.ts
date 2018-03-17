@@ -17,9 +17,4 @@ export class TabsPage {
     console.log("to suggestions");
     this.navCtrl.push('SuggestionsPage');
   }
-
-  gotoInvestment() {
-    console.log("to investments");
-    this.navCtrl.push('investments-page');
-  }
 }
