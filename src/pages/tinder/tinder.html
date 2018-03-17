@@ -14,7 +14,26 @@
 
 
 <ion-content padding>
+  <ion-card *ngFor="let item of questions">
+    <div *ngIf="!item.confirmed">
+      <ion-card-content>
+        <p>
+          {{item.text}}
+        </p>
+      </ion-card-content>
 
-  tinder app
-
+      <ion-row>
+        <ion-col col-8>
+          <button ion-button icon-left clear (click)="edit(item)">
+            <ion-icon name="thumbs-down"></ion-icon>
+          </button>
+        </ion-col>
+        <ion-col>
+          <button ion-button icon-left clear (click)="confirm(item)">
+            <ion-icon name="thumbs-up"></ion-icon>
+          </button>
+        </ion-col>
+      </ion-row>
+    </div>
+  </ion-card>
 </ion-content>
