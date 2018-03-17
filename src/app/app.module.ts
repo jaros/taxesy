@@ -13,6 +13,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import {SuggestionsPage} from "../pages/suggestions/suggestions";
 import { Camera } from '@ionic-native/camera';
 
+import { HttpClientModule } from '@angular/common/http';
+
 @NgModule({
   declarations: [
     MyApp,
@@ -24,6 +26,7 @@ import { Camera } from '@ionic-native/camera';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
