@@ -34,6 +34,9 @@ export class TinderPage {
 
   confirm(item: Question) {
     item.confirmed = true;
+    if (this.questions.filter(q => !q.confirmed).length == 0) {
+      this.navCtrl.push('SuggestionsPage');
+    }
   }
 }
 
