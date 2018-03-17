@@ -9,20 +9,20 @@
   <div id="parent">
 
     <div class="center">
-      <ion-label color="secondary">INSURANCE</ion-label>
-      <button class="btn" ion-button round outline color="primary">1</button> <!---->
+      <ion-label color="dark">INSURANCE</ion-label>
+      <button class="btn" ion-button round [color]="insuranceBtnColor">{{insuranceDocuments}}</button> <!---->
       <div>
-        <button class="btn" ion-button round outline color="secondary">2</button> <!--Bank Account Statement-->
-        <button class="btn" ion-button round outline color="danger">3</button> <!--Real Estate-->
+        <button class="btn" ion-button round color="secondary">2</button> <!--Bank Account Statement-->
+        <button class="btn" ion-button round color="secondary">1</button> <!--Real Estate-->
       </div>
       <div>
-        <ion-label class="btn-label left" color="secondary">BANK</ion-label>
-        <ion-label class="btn-label right" color="secondary">OTHER</ion-label>
+        <ion-label class="btn-label left" color="dark">BANK</ion-label>
+        <ion-label class="btn-label right" color="dark">OTHER</ion-label>
       </div>
     </div>
   </div>
 
   <button (click)="scanDocument()" ion-button color="light" block>SCAN</button>
-  <button ion-button color="secondary" block>EDIT</button>
-  <button ion-button color="danger" block>FINALISE</button>
+  <button ion-button color="light" block>EDIT</button>
+  <button ion-button color="light" block>FINALISE</button>
 </ion-content>
