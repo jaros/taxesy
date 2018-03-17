@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {IonicPage, NavController, NavParams, ModalController} from 'ionic-angular';
+import {IonicPage, NavController} from 'ionic-angular';
 
 /**
  * Generated class for the SuggestionsPage page.
@@ -15,9 +15,7 @@ import {IonicPage, NavController, NavParams, ModalController} from 'ionic-angula
 })
 export class SuggestionsPage {
 
-  constructor(public navCtrl: NavController,
-              public navParams: NavParams,
-              private modalCtrl: ModalController) {
+  constructor(public navCtrl: NavController) {
   }
 
   items = [
@@ -37,11 +35,7 @@ export class SuggestionsPage {
 
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad SuggestionsPage');
-  }
-
   imDone() {
-    // this.modalCtrl.create(CompletedComponent).present();
+    this.navCtrl.push('CompletedPage');
   }
 }
