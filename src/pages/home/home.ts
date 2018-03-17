@@ -27,7 +27,7 @@ export class HomePage {
     this.camera.getPicture(this.options).then((imageData) => {
       // imageData is either a base64 encoded string or a file URI
       // If it's base64:
-      let base64Image = 'data:image/jpeg;base64,' + imageData;
+      // let base64Image = 'data:image/jpeg;base64,' + imageData;
       this.insuranceDocuments += 1;
       console.log("got image", imageData)
     }, (err) => {
