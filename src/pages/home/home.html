@@ -6,11 +6,20 @@
 
 <ion-content padding>
 
-  <button ion-button round outline color="primary">1</button> <!--Insurance-->
-  <button ion-button round outline color="secondary">2</button> <!--Bank Account Statement-->
-  <button ion-button round outline color="danger">3</button> <!--Real Estate-->
+  <div id="parent">
 
+    <div class="center">
+      <ion-label color="secondary">Insurance</ion-label>
+      <button class="btn" ion-button round outline color="primary">1</button> <!---->
+      <div>
+        <ion-label class="btn-label left" color="secondary">Bank Acco</ion-label>
+        <button class="btn" ion-button round outline color="secondary">2</button> <!--Bank Account Statement-->
+        <button class="btn" ion-button round outline color="danger">3</button> <!--Real Estate-->
+        <ion-label class="btn-label right" color="secondary">Real Estate</ion-label>
+      </div>
+    </div>
+  </div>
   <div>
-  <ion-img  (click)="gotoReviewPersonalData()" width="250" height="250" src="assets/imgs/why-taxes.jpeg"></ion-img>
+    <ion-img (click)="gotoReviewPersonalData()" width="250" height="250" src="assets/imgs/why-taxes.jpeg"></ion-img>
   </div>
 </ion-content>
