@@ -50,7 +50,7 @@ import {Component} from "@angular/core";
       </ion-item>
     </ion-content>
     <ion-footer align="center">
-      <button class="btn" block ion-button>Buy</button>
+      <button (click)="gotoConfirm()" class="btn" block ion-button>Buy</button>
     </ion-footer>
   `,
  // selector: 'context-home',
