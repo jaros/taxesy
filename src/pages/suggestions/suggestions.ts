@@ -18,6 +18,18 @@ export class SuggestionsPage {
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
+  items = [
+    '3rd Pillar',
+    'Health insurance',
+    'Life Insurance',
+    'Donations',
+    'Investments',
+  ];
+
+  itemSelected(item: string) {
+    console.log("Selected Item", item);
+  }
+
   ionViewDidLoad() {
     console.log('ionViewDidLoad SuggestionsPage');
   }
