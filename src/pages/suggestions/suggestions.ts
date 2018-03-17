@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import {InvestmentsPage} from "../investments/investments";
 
 /**
  * Generated class for the SuggestionsPage page.
@@ -27,7 +28,13 @@ export class SuggestionsPage {
   ];
 
   itemSelected(item: string) {
-    console.log("Selected Item", item);
+    if ( item == this.items[4] ){
+      console.log("Selected Item ", item);
+      this.navCtrl.push('InvestmentsPage');
+    } else {
+      console.log("Selected Item", item);
+    }
+
   }
 
   ionViewDidLoad() {
