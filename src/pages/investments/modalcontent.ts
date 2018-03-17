@@ -1,4 +1,4 @@
-import {NavParams, Platform, ViewController} from "ionic-angular";
+import {NavController, NavParams, Platform, ViewController} from "ionic-angular";
 import {Component} from "@angular/core";
 
 @Component({
@@ -49,7 +49,7 @@ import {Component} from "@angular/core";
         Considered as 3rd pillar <br/>Tax deduction of X CHF
     </ion-item>
     
-    <button class="btn" block ion-button>Buy</button>
+    <button (click)="gotoConfirm()"class="btn" block ion-button>Buy</button>
   </ion-footer>
 </ion-content>
 `
@@ -60,7 +60,8 @@ export class ModalContentPage {
   constructor(
     public platform: Platform,
     public params: NavParams,
-    public viewCtrl: ViewController
+    public viewCtrl: ViewController,
+    public navCtrl: NavController
   ) {
 
     //const newline = "<br\>";
@@ -93,4 +94,9 @@ export class ModalContentPage {
   dismiss() {
     this.viewCtrl.dismiss();
   }
+
+  gotoConfirm() {
+    this.navCtrl.push('SuggestionsPage');
+  }
+
 }
