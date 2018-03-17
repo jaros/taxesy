@@ -10,7 +10,7 @@ import {Camera, CameraOptions} from '@ionic-native/camera';
 export class HomePage {
 
   insuranceDocuments: number = 0;
-  insuranceBtnColor: string = this.insuranceDocuments > 0 ? 'secondary' : 'danger';
+  insuranceBtnColor: string = 'danger';
 
   constructor(public navCtrl: NavController, private camera: Camera) {
 
@@ -29,6 +29,7 @@ export class HomePage {
       // If it's base64:
       // let base64Image = 'data:image/jpeg;base64,' + imageData;
       this.insuranceDocuments += 1;
+      this.insuranceBtnColor = 'secondary';
       console.log("got image", imageData)
     }, (err) => {
       console.log("rejected image", err);
