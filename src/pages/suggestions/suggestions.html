@@ -14,5 +14,48 @@
 
 
 <ion-content padding>
+  <ion-list-header>
+    Suggestions:
+  </ion-list-header>
+
+  <ion-list>
+    <button ion-item *ngFor="let item of items" (click)="itemSelected(item)">
+      {{ item }}
+    </button>
+  </ion-list>
+
+  <ion-footer align="center">
+    <button class="btn" block ion-button>I'M DONE</button>
+  </ion-footer>
 
 </ion-content>
+
+
+
+
+<!--
+
+<div id="parent">
+
+  <div class="center">
+    <ion-label color="secondary">INSURANCE</ion-label>
+    <button class="btn" ion-button round outline color="primary">1</button>
+    <div>
+      <button class="btn" ion-button round outline color="secondary">2</button>
+      <button class="btn" ion-button round outline color="danger">3</button>
+    </div>
+    <div>
+      <ion-label class="btn-label left" color="secondary">BANK</ion-label>
+      <ion-label class="btn-label right" color="secondary">OTHER</ion-label>
+    </div>
+  </div>
+</div>
+
+<button (click)="scanDocument()" ion-button color="light" block>SCAN</button>
+<button ion-button color="secondary" block>EDIT</button>
+<button ion-button color="danger" block>FINALISE</button>
+</ion-content>
+
+
+-->
+
