@@ -44,17 +44,14 @@ import {Component} from "@angular/core";
           <ion-note item-end align="right" style="color:#090909" >5 years -> X<br/> 10 years -> Y</ion-note>
         </ion-item>
       </ion-list>
-
-
-      <ion-footer align="center">
-        <ion-item>
-          <ion-icon name="alert" item-start></ion-icon>
-          Considered as 3rd pillar <br/>Tax deduction of X CHF
-        </ion-item>
-
-        <button class="btn" block ion-button>Buy</button>
-      </ion-footer>
+      <ion-item>
+        <ion-icon name="alert" item-start></ion-icon>
+        Considered as 3rd pillar <br/>Tax deduction of X CHF
+      </ion-item>
     </ion-content>
+    <ion-footer align="center">
+      <button class="btn" block ion-button>Buy</button>
+    </ion-footer>
   `,
  // selector: 'context-home',
 })
