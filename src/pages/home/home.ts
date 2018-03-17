@@ -25,13 +25,10 @@ export class HomePage {
       // imageData is either a base64 encoded string or a file URI
       // If it's base64:
       let base64Image = 'data:image/jpeg;base64,' + imageData;
+      console.log("got image", imageData)
     }, (err) => {
-      // Handle error
+      console.log("rejected image", err);
     });
-  }
-
-  gotoReviewPersonalData() {
-    this.navCtrl.push('tinder-page');
   }
 
 }
