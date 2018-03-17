@@ -1,8 +1,8 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
-import { AboutPage } from '../about/about';
-import { ContactPage } from '../contact/contact';
-import { HomePage } from '../home/home';
+import {AboutPage} from '../about/about';
+import {ContactPage} from '../contact/contact';
+import {HomePage} from '../home/home';
 import {SuggestionsPage} from "../suggestions/suggestions";
 
 @Component({
@@ -16,6 +16,5 @@ export class TabsPage {
   tab4Root = SuggestionsPage;
 
   constructor() {
-
   }
 }
