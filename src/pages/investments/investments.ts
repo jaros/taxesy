@@ -9,7 +9,9 @@ import {ModalContentPage} from "./modalcontent";
  * Ionic pages and navigation.
  */
 
-@IonicPage()
+@IonicPage({
+  name: 'investments-page'
+})
 @Component({
   selector: 'page-investments',
   templateUrl: 'investments.html',

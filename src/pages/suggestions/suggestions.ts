@@ -28,7 +28,7 @@ export class SuggestionsPage {
   itemSelected(item: string) {
     if ( item == this.items[3] ){
       console.log("Selected Item ", item);
-      this.navCtrl.push('InvestmentsPage');
+      this.navCtrl.push('investments-page');
     } else {
       console.log("Selected Item", item);
     }
