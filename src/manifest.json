@@ -4,9 +4,9 @@
   "start_url": "index.html",
   "display": "standalone",
   "icons": [{
-    "src": "assets/imgs/why-taxes.jpeg",
+    "src": "assets/imgs/why-taxes.png",
     "sizes": "512x512",
-    "type": "image/jpeg"
+    "type": "image/png"
   }],
   "background_color": "#4e8ef7",
   "theme_color": "#4e8ef7"
