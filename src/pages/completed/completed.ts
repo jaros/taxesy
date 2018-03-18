@@ -23,7 +23,7 @@ export class CompletedPage {
   }
 
   goHome() {
-    this.navCtrl.goToRoot({});
+    // this.navCtrl.goToRoot({});
   }
 
 }
