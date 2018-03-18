@@ -21,7 +21,7 @@ export class TinderPage {
     new Question("Do you still have the same address?\n [Schlossstrasse 108, 3008 Bern]", false),
     new Question("Do you still work for SIX Group AG?", false),
     new Question("Do you still have no children?", false),
-    new Question("Are you still alone?", false),
+    new Question("Are you still single?", false),
   ];
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
