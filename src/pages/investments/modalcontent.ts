@@ -1,4 +1,4 @@
-import {AlertController, NavController, NavParams, Platform, ViewController} from "ionic-angular";
+import {AlertController, NavController, NavParams, Platform, ToastController, ViewController} from "ionic-angular";
 import {Component} from "@angular/core";
 
 @Component({
@@ -62,6 +62,7 @@ export class ModalContentPage {
               public params: NavParams,
               public viewCtrl: ViewController,
               public navCtrl: NavController,
+              private toastCtrl: ToastController,
               public alertCtrl: AlertController) {
 
     //const newline = "<br\>";
@@ -93,6 +94,7 @@ export class ModalContentPage {
     let alert = this.alertCtrl.create({
       title: 'Success',
       subTitle: 'You will receive the confirmation within the next few days.',
+      enableBackdropDismiss: false,
       buttons: [{
         text: 'Ok', handler: () => {
           console.log('clicked Ok');
